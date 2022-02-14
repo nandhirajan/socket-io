@@ -1,0 +1,20 @@
+- Data transfer between client and server will be done via data packets
+- Data packets using TCP protocols
+- Packets have below layers
+  - Application -> HTTP/FTP/SSH/SMTP
+  - Transport -> TCP/UDP (TCP/IP)
+  - Network -> IP (TCP/IP)
+  - Link -> Ethernet, wifi
+  - Physical -> Cables 
+  
+Transport layouer uses 2^16 ports -> 	65,536 ports
+Node js uses one of the port 3000 in local
+Application layer hand over the request to Transport layer ( with source and destination port ) to establish the connection
+  
+UDP:
+- Lightweight, only 8 bytes
+- Connection less. No need to maintain the connection between Client and Server
+- Send data no matter what!
+- What happens if data lose. It won't care
+
+  
